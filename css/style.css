@@ -1,0 +1,251 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* Основные стили */
+:root {
+  --h1-h2-color: #000;
+  --h3_nav_menu_button-color: #263238;
+  --text_p-color: #8F95A5;
+  --number-color: #2A3246;
+  --bg_card-color: #F5F5F5;
+}
+.container {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--h1-h2-color);
+  line-height: 80px;
+  text-align: center;
+}
+h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--h3_nav_menu_button-color);
+  /* line-height: 80px; */
+}
+p {
+  font-weight: 400;
+  color: var(--text_p-color);
+}
+button {
+  background-color: var(--h3_nav_menu_button-color);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--h3_nav_menu_button-color);
+  background-color: #fff;
+  border: 2px solid var(--h3_nav_menu_button-color);
+}
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 55px;
+}
+.logo {
+  padding-bottom: 25px;
+}
+.nav_menu_iner {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+  margin-right: 110px;
+  padding-bottom: 22px;
+}
+.nav_menu_item { 
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--h3_nav_menu_button-color);
+}
+.nav_menu_item:hover {
+    color: var(--h3_nav_menu_button-color);
+}
+.nav_menu_item::before {
+  content: "";         
+  position: absolute;  
+  display: block;     
+  width: 100%;
+  height: 2px;
+  bottom: -2px;        
+  left: 0;
+  background-color: var(--h3_nav_menu_button-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease; 
+}
+.nav_menu_item:hover::before {
+  transform: scaleX(1);
+}
+.nav_menu_button {
+  padding: 18px 56px;
+  letter-spacing: 0.03em;
+  color: var(--h3_nav_menu_button-color);
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #fff;
+  border: 2px solid var(--h3_nav_menu_button-color);
+}
+.nav_menu_button:hover {
+  color: #fff;
+  background-color: var(--h3_nav_menu_button-color);
+}
+/* Первый раздел */
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+  align-items: center;
+}
+.header_inner_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+.header_inner_h1 {
+  display: flex;
+}
+.headet_title_h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 600;
+  max-width: 420px;
+  color: var(--h1-h2-color);
+}
+.header_h1_light {
+  width: 120px;
+  height: 120px;
+  margin-top: 92px;
+}
+.header_text_p {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text_p-color);
+  padding-top: 40px;
+}
+.header_button {
+  padding: 36px;
+  width: 436px;
+  font-size: 36px;
+  border-radius: 15px;
+  letter-spacing: 0.05em;
+  margin-top: 67px;
+  border: 2px solid var(--h3_nav_menu_button-color);
+}
+.header_first_section_img {
+  margin-top: 10px;
+}
+/* Второй раздел Skills */
+h2 {
+  margin-bottom: 95px;
+}
+.skills {
+  padding-top: 93px;
+}
+.skills_grid_wrapper {
+  display: grid;
+  column-gap: 18px;
+  row-gap: 20px;
+  grid-template-areas: 
+  "one two three"
+  "one four four";
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 70px;
+}
+.skills__grid_item {
+  background-color: var(--bg_card-color);
+  max-width: 435px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.speaking {
+  grid-area: one;
+  padding-top: 38px;
+  justify-content: flex-start;
+}
+.writing {
+  grid-area: two;
+  padding-right: 25px;
+}
+.reading {
+  grid-area: three;
+  padding-top: 7px;
+}
+.listening {
+  grid-area: four;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  height: 343px;
+  padding-right: 31px;
+}
+.listening .skills__grid_img {
+  order: 1;
+}
+.speaking .skills__grid_img {
+  padding-left: 25px;
+}
+.writing .skills__grid_img {
+  padding-left: 120px;
+}
+.skills__grid_img {
+  max-width: 100%;
+}
+.skills__grid_content {
+  margin-top: -31px;
+  padding-left: 40px;
+}
+.speaking .skills__grid_content {
+    margin-top: 11px;
+}
+.listening .skills__grid_content {
+  margin-top: 0px;
+  max-width: 350px;
+  padding-top: 40px;
+}
+.skills_text_p {
+  font-size: 16px;
+  max-width: 435px;
+  width: 100%;
+  line-height: 24px;
+  padding-top: 10px;
+}
+.speaking .skills_text_p {
+  padding-right: 30px;
+  padding-top: 24px;
+}
+.skills__item_button {
+  width: 218px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.3s all;
+  margin: 31px 0 42px;
+}
+.speaking .skills__item_button {
+  margin-top: 35px;
+  width: 230px;
+}
+
