@@ -248,4 +248,132 @@ h2 {
   margin-top: 35px;
   width: 230px;
 }
+/* Третий раздел: About Us */
+.about {
+  padding-top: 182px;
+  margin-bottom: 188px;
+}
+.about_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about_inner_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 635px;
+  margin-top: -11px;
+}
+.About_h2 {
+text-align: start;
+margin-bottom: 24px;
+}
+.about__text_p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+.about__inner_score {
+  display: flex;
+  justify-content: space-between;
+  max-width: 612px;
+}
+.about__score_item {
+  text-align: center;
+}
+.score_item_h3 {
+  font-size: 48px;
+  line-height: 70px;
+}
+.score__text_p {
+  font-size: 20px;
+}
+.about_img {
+  width: 100%;
+}
+/* Третий раздел: Pricing */
+.pricing_h2 {
+  margin-bottom: 72px;
+}
+.pricing_wripper {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 200px;
+}
+.pricing__card_inner_1 {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+  margin-right: 52px;
+}
+.pricing__card_inner_2 {
+  justify-content: space-between;
+  width: 390px;
+  margin-right: 33px;
+}
+/* .pricing__card_inner_3 {
+  justify-content: space-between;
+} */
+.pricing__card_img {
+  width: 100%;
+}
+.card_1_img {
+  margin-top: -40px;
+  padding-left: 25px;
+  margin-bottom: 45px;
+}
+.card_2_img {
+width: 391px;
+height: 283px;
+margin-top: 6px;
+margin-bottom: 37px;
+}
+.card_3_img {
+  padding-left: 48px;
+  margin-top: -20px;
+  margin-bottom: 6px;
+}
+.pricing__title_card_1 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.pricing__title_card_2 {
+  margin-bottom: 60px;
+}
+.pricing__title_card_3 {
+  margin-bottom: 56px;
+}
+.pricing_h3 {
+  padding-bottom: 23px;
+}
+.pricing_h3_card_1 {
+  padding-bottom: 18px;
+}
+.pricing__text_p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.price_inner {
+  display: flex;
+  max-width: 240px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+}
+.pricing__card_price {
+  margin-right: 15px;
+  font-size: 30px;
+  color: var(--h3_nav_menu_button-color);
+}
+.pricins__card_limit {
+  font-size: 18px;
+}
+/* Четвертый раздел: Contact */
+
 
