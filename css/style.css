@@ -314,9 +314,6 @@ margin-bottom: 24px;
   width: 390px;
   margin-right: 33px;
 }
-/* .pricing__card_inner_3 {
-  justify-content: space-between;
-} */
 .pricing__card_img {
   width: 100%;
 }
@@ -377,7 +374,8 @@ margin-bottom: 37px;
 /* Четвертый раздел: Contact */
 .contact__wrapper {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  margin-bottom: 133px;  
 }
 .contact_img img{
   max-width: 477px;
@@ -422,4 +420,43 @@ input::placeholder {
   border-radius: 10px;
   margin-left: 7px;
 }
+/* Footer */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 31px;
+  margin-bottom: 64px;
+}
+footer .container::before {
+  content: "";         
+  display: block;     
+  width: 100%;
+  height: 1px;       
+  left: 0;
+  background-color: var(--text_p-color);
+}
+.footer_logo {
+  padding-top: 5px;
+  padding-left: 3px;
+}
+.footer__policy_inner {
+  padding-top: 15px;
+}
+.policy_list {
+  display: flex;
+  list-style: none;
+}
+.policy_item {
+  font-size: 24px;
+  color: var(--text_p-color);
+  text-decoration: none;
+  margin-left: 5px;
+}
+.policy_item_1 {
+  font-size: 24px;
+  color: var(--text_p-color);
+  text-decoration: none;
+}
+
+
 
