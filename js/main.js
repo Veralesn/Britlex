@@ -36,3 +36,11 @@
         closeMenu();
       }
     });
+    window.onscroll = function() {
+    var button = document.getElementById('scroll-button');
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    button.classList.remove('hidden');
+    } else {
+    button.classList.add('hidden');
+    }
+    };

@@ -105,7 +105,7 @@ button {
 /* burger menu */
 /* Кнопка-бургер слева в правом углу */
 .burger-btn {
-  position: fixed;
+  /* position: fixed; */
   top: 40px;
   right: 16px;
   width: 30px;
@@ -577,6 +577,11 @@ input::placeholder {
   border-radius: 10px;
   margin-left: 7px;
 }
+.contact_button:hover {
+  color: var(--h3_nav_menu_button-color);
+  background-color: #fff;
+  border: 2px solid var(--h3_nav_menu_button-color);
+}
 /* Footer */
 .footer_wrapper {
   display: flex;
@@ -620,7 +625,32 @@ footer .container::before {
 .policy_item_1:hover {
   color: #263238;
 }
-
+/* Стрелка наверх */
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #39515E;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    opacity: 0.7;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 104;
+}
+.scroll-top-button:hover {
+  opacity: 1;
+}
+.scroll-top-button.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 /* Adaptive */
 @media screen and (max-width: 1400px) {
   .skills_grid_wrapper {
