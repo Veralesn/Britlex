@@ -8,4 +8,4 @@ HTML и CSS
 
 Адаптив  
 
-<code>[Britlex_portfolio_5](veralesn.github.io/Britlex/)</code>
+<code>[Britlex_portfolio_5](https://veralesn.github.io/Britlex/)</code>
